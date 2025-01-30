@@ -14,8 +14,8 @@ export const Vimeo: React.FC<LayoutProps> = ({
 }) => {
   const webRef = useRef<WebView>()
   const url: string = params
-    ? `https://player.vimeo.com/video/${videoId}?${params}`
-    : `https://player.vimeo.com/video/${videoId}`
+    ? `https://vimeo.com/event/${videoId}?${params}`
+    : `https://vimeo.com/event/${videoId}`
 
   const autoPlay = params?.includes('autoplay=1')
 
